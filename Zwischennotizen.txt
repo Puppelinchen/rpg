@@ -1,0 +1,18 @@
+<div id="text">
+        <h1>Starte jetzt dein Abenteuer im Browser!</h1>
+
+        <p> Du stehst in einem dunklen, nebeligen Wald. Ein beißender
+            Geruch nach Moder und Verwesung kriecht dir in die Naselöcher.
+            Du hörst ein Knacksen im Unterholz und dannach erhaschst du
+            aus dem Nebel hinter dir eine Bewegung.
+        </p>
+
+        <h2>Was willst du tun?</h2>
+
+        <ul>
+            <li><a href="Lauf!.html">Weg laufen</a></li>
+            <li><a href="Optische_Täuschung.html">Wurde ich getäuscht?</a>
+            </li>
+        </ul>
+
+    </div>

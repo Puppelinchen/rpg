@@ -4,88 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RBG-Start</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <style>
-        p {
-            font-family: 'Roboto', sans-serif;
-            font-size: 30px;
-            color: bisque;
-            
-        }
-
-        body {
-            margin: 0;
-        }
-
-        h1 {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .icon {
-            height: 100px;
-
-        }
-
-        #background {
-            position: absolute;
-            height: 100vh;
-            width: 100vw;
-        }
-
-        html,
-        body {
-            overflow: hidden;
-        }
-
-        #text {
-            position: absolute;
-            color: bisque;
-            text-decoration: none;
-            margin-left: 25vh;
-            margin-top: 10%;
-        }
-
-        .kreis {
-            width: 250px;
-            height: 250px;
-            background-color: rgba(32, 80, 96, 0.39);
-            border-radius: 50%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+    <title>RPG - Start</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-
-    <img id="background" src="Abenteuer_rollenspiel_background.png">
-
-
-    <div>
-        <img class="icon" src="House.png">
-        <img class="icon" src="controller.png">
-    </div>
+    <h1>Willkommen zu deinem Abenteuer!</h1>
+    <img class="story-img" src="img/Start.png" alt="">
+    <p>Du stehst vor einer dunklen Höhle. Was möchtest du tun?</p>
 
 
-
-
-    <div class="kreis">
-        <img class="icon" src="controller.png">
-        <p>Spiele</p>
-    </div>
+    <ul>
+        <li><a href="hoehle.html">In die Höhle gehen</a></li>
+        <li><a href="dorf.html">Zurück ins Dorf gehen</a></li>
+    </ul>
 
 </body>
 

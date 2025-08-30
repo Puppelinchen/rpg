@@ -1,33 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+h1 {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    color: #e3962f;
+    z-index: 2;
+}
+
+
+#background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: block;
+    opacity: 0.75;
+}
 
 body {
-    font-family: "Cinzel", sans-serif;
-    background-color:  #f4f4f4;
-    color: #333;
-    text-align: center;
+    margin: 0;
 }
 
-p {
-    font-size: 20px;
+.highlight {
+    color: #558a53;
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
-    font-weight: 700;
+.highlight2 {
+    color: #bf6c5c; 
 }
 
-a:hover {
-    text-decoration: underline;
+.cake {
+    height: 200px;
 }
 
-ul {
-    list-style-type: none;
+#Handball {
+    height: 50px;
+}
+    
+
+.flip-card {
+    perspective: 1000px;
+    width: 300px;
+    height: 500px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.story-img {
+.flip-card-inner {
+    position: relative;
     width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(.4, 2, .6, 1);
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 88%;
+    height: 93%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    position: absolute;
+    background-color: #efc8a9;
     border-radius: 10px;
-    max-height: 400px;
-    object-fit: cover;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid #558a53;
+
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    background-color: #efc8a9;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid #558a53;
+    /* Hier kannst du das Design der Rückseite anpassen */
 }

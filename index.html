@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG - Start</title>
-    
+    <title>Start</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
-    <h1>Willkommen zu deinem Abenteuer!</h1>
-    <img class="story-img" src="img/Start.png" alt="">
-    <p>Du stehst vor einer dunklen Höhle. Was möchtest du tun?</p>
+    <img id="background" src="img/Ein Geburtstagstisch.png">
 
 
-    <ul>
-        <li><a href="hoehle.html">In die Höhle gehen</a></li>
-        <li><a href="dorf.html">Zurück ins Dorf gehen</a></li>
-    </ul>
 
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h1>Happy<br><span class="highlight">Birthday</span><br><span class="highlight2">Vinci!</span><br><br><br> <span class="cake">🎂</span></h1>
+            </div>
+            <div class="flip-card-back">
+                <h1 class="highlight2">Lieber Vinci,<br>ich wünsche dir alles<br>Gute zu deinem 11.<br>Geburtstag!!!</h1>
+                <h1>Und viel Spaß und Erfolg<br> mit deinem neuem Handball</h1>
+                <a href="https://www.hummelonlineshop-muenchen.de/?gad_source=1&gad_campaignid=22607278493&gbraid=0AAAAAo6cixRmPbmWbma_BKrid4xkz9Qnw&gclid=Cj0KCQjwwsrFBhD6ARIsAPnUFD0sLUw_i2gmLiVse7UtkalIv-wXruREVLQRHLgEoszQhy6iqf0GurkaAlHtEALw_wcB"><img id="Pfeil" src="img/Pfeil.png"><img id="Handball" src="img/Handball.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
